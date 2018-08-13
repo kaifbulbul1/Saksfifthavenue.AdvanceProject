@@ -1,0 +1,21 @@
+men = .//*[@id='TheMensStoreNavMenu']/a
+mendropDownList = //*[@id='TheMensStoreNavMenu']/a
+jeans = //*[@id='TheMensStoreNavMenu']//li[2]//li[6]/a
+designer = //*[@id='designer']
+armaniJeans = //*[@id='refinement-1845'][@name='available-Designer-refinements']
+price =//*[@id='price']
+priceRefinements = //*[@id='refinement-399545627']
+sortByDropDownList = //select[@id='pa-enh-sortby-dropdown']/option[5]
+colorSelectionBtn = //*[@id='color']
+bluecolorBtn = //*[@id='js-pa-layer-color']//ul[1]/li[3]
+sizeBtn = //*[@id='size']
+sizeCheckBox = //*[@id='refinement-4294904062']
+fitBtn = //*[@id='fit']
+fitSelection = //*[@id='refinement-4294903515']
+washBtn = //*[@id='wash']
+washSelection = //*[@id='refinement-4294904446']
+applyBtn = //*[@id='js-pa-layer-wash']//a[@class='action-link sfa-pa-refine-apply-button sfa-button transactional']
+selectedItemBoglioliJeans =//*[@id='img_0400093012635-0']	
+selectedItemSize32x32 = //li[@class='product-variant-attribute-value product-variant-attribute-value--text'][2]
+addToBagBtn = //button[@class='hbc-button hbc-button--full hbc-button--primary product__add-to-bag-button']
+viewMyBagCheckoutBtn = //a[@class='sfa-button small transactional']

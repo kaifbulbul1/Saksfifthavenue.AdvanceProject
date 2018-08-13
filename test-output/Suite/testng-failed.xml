@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="Browser" value="firefox"/>
+  <test name="HomePageSuite">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="Paxotech.com.Saksfifthavenue.AdvanceProject.CreateAccountPageFunction"/>
+    </classes>
+  </test> <!-- HomePageSuite -->
+  <test name="HomePageSuite(failed)">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="Paxotech.com.Saksfifthavenue.AdvanceProject.CreateAccountPageFunction">
+        <methods>
+          <include name="invalidCustomerCreateAccount"/>
+          <include name="validCustomerCreateAccount"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Paxotech.com.Saksfifthavenue.AdvanceProject.CreateAccountPageFunction -->
+    </classes>
+  </test> <!-- HomePageSuite(failed) -->
+</suite> <!-- Failed suite [Suite] -->

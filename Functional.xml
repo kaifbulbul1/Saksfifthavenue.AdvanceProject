@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--<suite name="FunctionalSuite"> -->
+ <suite name="TestAll" verbose = "1" parallel = "tests" thread-count ="2">
+  <test name="HomePageTest">
+    <parameter name="Browser" value="firefox"></parameter>
+    <classes>
+<!--<class name="Paxotech.com.Saksfifthavenue.AdvanceProject.SigninPageVerification"/>-->
+<class name="Paxotech.com.Saksfifthavenue.AdvanceProject.HomePageFuntionality"/> 
+   <!--<class name="Paxotech.com.Saksfifthavenue.AdvanceProject.CreateAccountPageFunction"/>-->
+     <!--<class name="Paxotech.com.Saksfifthavenue.AdvanceProject.AddProductToCardPageFunction"/> -->
+    </classes>
+    </test><!-- Test -->
+
+  <test name="ie">
+    <parameter name="Browser" value="ie"></parameter>
+    <classes>
+<!--<class name="Paxotech.com.Saksfifthavenue.AdvanceProject.SigninPageVerification"/>-->
+ <!-- <class name="Paxotech.com.Saksfifthavenue.AdvanceProject.HomePageFuntionality"/> -->
+   <!--<class name="Paxotech.com.Saksfifthavenue.AdvanceProject.CreateAccountPageFunction"/>-->
+     <!--<class name="Paxotech.com.Saksfifthavenue.AdvanceProject.AddProductToCardPageFunction"/> -->
+    </classes>
+    </test><!-- Test -->
+    <test name="ch">
+    <parameter name="Browser" value="ch"></parameter>
+    <classes>
+<!--<class name="Paxotech.com.Saksfifthavenue.AdvanceProject.SigninPageVerification"/>-->
+<!--<class name="Paxotech.com.Saksfifthavenue.AdvanceProject.HomePageFuntionality"/> -->
+   <!--<class name="Paxotech.com.Saksfifthavenue.AdvanceProject.CreateAccountPageFunction"/>-->
+     <!--<class name="Paxotech.com.Saksfifthavenue.AdvanceProject.AddProductToCardPageFunction"/> -->
+    </classes>
+    </test><!-- Test -->
+</suite> <!-- Test -->

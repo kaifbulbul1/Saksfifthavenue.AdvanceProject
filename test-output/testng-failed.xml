@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [TestAll]" parallel="tests">
+  <parameter name="Browser" value="ch"/>
+  <test name="HomePageTest">
+    <parameter name="Browser" value="firefox"/>
+  </test> <!-- HomePageTest -->
+  <test name="ie">
+    <parameter name="Browser" value="ie"/>
+  </test> <!-- ie -->
+  <test name="ch">
+    <parameter name="Browser" value="ch"/>
+    <classes>
+      <class name="Paxotech.com.Saksfifthavenue.AdvanceProject.HomePageFuntionality"/>
+    </classes>
+  </test> <!-- ch -->
+  <test name="ch(failed)" parallel="tests">
+    <parameter name="Browser" value="ch"/>
+    <classes>
+      <class name="Paxotech.com.Saksfifthavenue.AdvanceProject.HomePageFuntionality">
+        <methods>
+          <include name="navigateToJewelryAccessoriesPage"/>
+          <include name="navigateToDesignersPage"/>
+          <include name="verifycreateAccountPageLink"/>
+          <include name="verifyHomePage"/>
+          <include name="navigateToKidsPage"/>
+          <include name="navigateToBeautyPage"/>
+          <include name="navigateToSalePage"/>
+          <include name="searchSaleItems"/>
+          <include name="setUp"/>
+          <include name="navigateToHandbagsPage"/>
+          <include name="navigateToShoesPage"/>
+          <include name="navigateToMenPage"/>
+          <include name="navigateToHomePage"/>
+          <include name="navigateToSignInPage"/>
+          <include name="navigateToWomensApparelPage"/>
+        </methods>
+      </class> <!-- Paxotech.com.Saksfifthavenue.AdvanceProject.HomePageFuntionality -->
+    </classes>
+  </test> <!-- ch(failed) -->
+</suite> <!-- Failed suite [TestAll] -->
